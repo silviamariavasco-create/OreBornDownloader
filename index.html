@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oreborn — Beta 0.9 Pré-Release</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navegação -->
+  <nav id="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🪨</span>
+        <h1>OREBORN</h1>
+        <span class="version">Beta 0.9</span>
+      </div>
+      <div class="nav-menu">
+        <a href="#sobre" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a>
+        <a href="#features" class="nav-link"><i class="fas fa-gem"></i> Recursos</a>
+        <a href="#gameplay" class="nav-link"><i class="fas fa-gamepad"></i> Gameplay</a>
+        <a href="#download" class="nav-link"><i class="fas fa-download"></i> Download</a>
+        <a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> Contato</a>
+      </div>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text animate-on-scroll">
+        <h2>Explore. Minerar. Sobreviver.</h2>
+        <p>Um jogo sandbox de aventura e sobrevivência em Python, compilado para Windows. Mundo gerado proceduralmente com biomas únicos, criaturas e mistérios ancestrais.</p>
+        <a href="https://github.com/silviamariavasco-create/OreBorn/releases" target="_blank" class="btn-hero">
+          <i class="fas fa-rocket"></i> Baixar Agora
+        </a>
+        <div class="github-badge" style="margin-top: 20px;">
+          <a href="https://github.com/silviamariavasco-create/OreBorn.git" target="_blank" style="color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+            <i class="fab fa-github"></i> Ver código fonte no GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll">
+        <div class="game-preview">
+          <div class="pixel-grid"></div>
+          <div class="floating-elements">
+            <div class="floating-block block-1">🪨</div>
+            <div class="floating-block block-2">🌳</div>
+            <div class="floating-block block-3">⚔️</div>
+            <div class="floating-block block-4">💎</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sobre o Jogo -->
+    <section id="sobre" class="section-card animate-on-scroll">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-mountain"></i>
+        </div>
+        <h2>Sobre o Oreborn</h2>
+      </div>
+      <div class="section-content">
+        <p class="lead">
+          <strong>Oreborn</strong> é um jogo indie de aventura e sobrevivência desenvolvido em Python e <strong>compilado para Windows</strong>. 
+          Em um mundo aberto e gerado proceduralmente, você explorará biomas diversos, minerará recursos, 
+          craftará ferramentas e armas, construirá abrigos e enfrentará criaturas misteriosas.
+        </p>
+        
+        <div class="game-details">
+          <div class="detail-card">
+            <i class="fas fa-globe-americas"></i>
+            <h3>Mundo Vastíssimo</h3>
+            <p>Geração procedural com 10.000 blocos de largura e múltiplos biomas: planícies, desertos, savanas, taigas e florestas profundas.</p>
+          </div>
+          
+          <div class="detail-card">
+            <i class="fas fa-hammer"></i>
+            <h3>Sistema de Crafting</h3>
+            <p>Crie ferramentas, armas, portas, fornalhas, baús e muito mais usando o sistema de crafting com grade 3x3.</p>
+          </div>
+          
+          <div class="detail-card">
+            <i class="fas fa-dragon"></i>
+            <h3>Inimigos e Chefe Final</h3>
+            <p>Enfrente esqueletos, zumbis e animais hostis. Ative o Altar Ancestral para despertar o <strong>Guardião Ancião</strong>!</p>
+          </div>
+          
+          <div class="detail-card">
+            <i class="fas fa-meteor"></i>
+            <h3>Eventos Dinâmicos</h3>
+            <p>Meteoros caem do céu, dia e noite alternam com efeitos visuais, e o ambiente reage às suas ações.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="features" class="section-card dark-card animate-on-scroll">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h2>Recursos do Jogo</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3>43 Tipos de Blocos</h3>
+          <p>Gramas, pedras, minérios, madeira, água, lava, meteoritos e blocos ancestrais com propriedades únicas.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Sistema de Fome</h3>
+          <p>Colete alimentos crus e cozinhe-os em fornalhas para restaurar saúde e fome. Dificuldades variam o consumo.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-moon"></i>
+          </div>
+          <h3>Ciclo Dia/Noite</h3>
+          <p>Ambiente dinâmico com cores do céu que mudam (dia, pôr do sol, noite, amanhecer) e criaturas noturnas.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-chess-board"></i>
+          </div>
+          <h3>Biomas Procedurais</h3>
+          <p>Cada bioma tem vegetação, recursos e características próprias. Explore desertos com cactos até florestas densas.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-dungeon"></i>
+          </div>
+          <h3>Cavernas e Lagos</h3>
+          <p>Geração automática de cavernas subterrâneas, lagos de água e rios de lava com minérios raros.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-save"></i>
+          </div>
+          <h3>Sistema de Save</h3>
+          <p>Salve múltiplos mundos, inventário, posição e progresso. Carregue a qualquer momento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay -->
+    <section id="gameplay" class="section-card animate-on-scroll">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <h2>Gameplay & Controles</h2>
+      </div>
+      <div class="gameplay-content">
+        <div class="controls-card">
+          <h3><i class="fas fa-keyboard"></i> Controles</h3>
+          <div class="controls-grid">
+            <div class="control-item">
+              <span class="key">W/A/S/D</span>
+              <span class="action">Movimentação</span>
+            </div>
+            <div class="control-item">
+              <span class="key">ESPAÇO</span>
+              <span class="action">Pular</span>
+            </div>
+            <div class="control-item">
+              <span class="key">E</span>
+              <span class="action">Inventário</span>
+            </div>
+            <div class="control-item">
+              <span class="key">1-9</span>
+              <span class="action">Hotbar</span>
+            </div>
+            <div class="control-item">
+              <span class="key">CLIQUE ESQ</span>
+              <span class="action">Minerar/Atacar</span>
+            </div>
+            <div class="control-item">
+              <span class="key">CLIQUE DIR</span>
+              <span class="action">Colocar/Interagir</span>
+            </div>
+            <div class="control-item">
+              <span class="key">ESC</span>
+              <span class="action">Pausar</span>
+            </div>
+            <div class="control-item">
+              <span class="key">Q</span>
+              <span class="action">Ciclar Hotbar</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modes-card">
+          <h3><i class="fas fa-sliders-h"></i> Modos de Jogo</h3>
+          <div class="mode-item">
+            <h4>SOBREVIVÊNCIA</h4>
+            <p>Gerencie saúde, fome e recursos. Colete, crafte e sobreviva contra criaturas hostis.</p>
+            <div class="difficulties">
+              <span class="diff easy">Fácil</span>
+              <span class="diff medium">Médio</span>
+              <span class="diff hard">Difícil</span>
+            </div>
+          </div>
+          <div class="mode-item">
+            <h4>CRIATIVO</h4>
+            <p>Recursos infinitos, voo livre e construção sem limites. Perfeito para criar estruturas épicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="section-card dark-card animate-on-scroll">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-download"></i>
+        </div>
+        <h2>Download</h2>
+      </div>
+      <div class="download-content">
+        <div class="download-info">
+          <h3>Pré-Release Beta 0.9</h3>
+          <p><strong>Executável para Windows</strong> - Baixe diretamente do GitHub Releases!</p>
+          
+          <div class="requirements">
+            <h4><i class="fas fa-check-circle"></i> Requisitos do Sistema</h4>
+            <ul>
+              <li><strong>Sistema Operacional:</strong> Windows 7, 8, 10 ou 11</li>
+              <li><strong>Processador:</strong> 1.5 GHz ou superior</li>
+              <li><strong>Memória RAM:</strong> 2GB (4GB recomendado)</li>
+              <li><strong>Placa de Vídeo:</strong> Compatível com OpenGL</li>
+              <li><strong>Armazenamento:</strong> 100MB livres</li>
+              <li><strong>Nota:</strong> Não requer Python instalado</li>
+            </ul>
+          </div>
+          
+          <div class="warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p><strong>Atenção:</strong> Esta é uma versão beta. Antivírus pode alertar sobre arquivos .exe desconhecidos. Clique em "Mais informações" e "Executar mesmo assim".</p>
+          </div>
+        </div>
+        
+        <div class="download-box">
+          <div class="file-card">
+            <div class="file-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="file-info">
+              <h4>GitHub Releases</h4>
+              <p>Download oficial do executável</p>
+              <span class="file-size">Versão mais recente</span>
+            </div>
+            <a href="https://github.com/silviamariavasco-create/OreBorn/releases" target="_blank" class="download-btn">
+              <i class="fas fa-external-link-alt"></i> Ir para Releases
+            </a>
+          </div>
+          
+          <div class="instructions">
+            <h4><i class="fas fa-desktop"></i> Como Instalar</h4>
+            <ol class="install-steps">
+              <li>Acesse a página de Releases do GitHub</li>
+              <li>Baixe o arquivo <strong>OreBorn.zip</strong> mais recente</li>
+              <li>Extraia o conteúdo em uma pasta</li>
+              <li>Execute <strong>oreborn.exe</strong></li>
+              <li>Aguarde o download dos arquivos adicionais (primeira execução)</li>
+              <li>Pronto para jogar!</li>
+            </ol>
+            
+            <div class="troubleshooting">
+              <h5><i class="fas fa-tools"></i> Solução de Problemas</h5>
+              <ul>
+                <li>Se o Windows Defender bloquear, clique em "Mais informações" e "Executar mesmo assim"</li>
+                <li>Certifique-se de ter direitos de administrador para instalação</li>
+                <li>Verifique se há espaço suficiente no disco</li>
+                <li>Para suporte, entre em contato através da seção abaixo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section-card animate-on-scroll">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h2>Contato & Desenvolvedor</h2>
+      </div>
+      <div class="contact-content">
+        <div class="dev-card">
+          <div class="dev-avatar">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+          <div class="dev-info">
+            <h3>ThousandDegrees</h3>
+            <p class="dev-title">Desenvolvedor Indie</p>
+            <p>Criador do Oreborn - Desenvolvido em Python com Tkinter e compilado para Windows.</p>
+          </div>
+        </div>
+        
+        <div class="contact-actions">
+          <a href="https://github.com/silviamariavasco-create/OreBorn.git" class="social-btn" target="_blank">
+            <i class="fab fa-github"></i> Repositório GitHub
+          </a>
+          <a href="https://github.com/silviamariavasco-create/OreBorn/releases" class="social-btn" target="_blank">
+            <i class="fas fa-download"></i> Releases
+          </a>
+          <a href="https://discord.gg/9k79Yy3JC4" class="social-btn">
+            <i class="fas fa-envelope"></i> Suporte
+          </a>
+        </div>
+        
+        <div class="changelog">
+          <h4><i class="fas fa-history"></i> Últimas Atualizações (Beta 0.9)</h4>
+          <ul>
+            <li>Sistema de meteoros funcionais</li>
+            <li>Chefão Guardião Ancião implementado</li>
+            <li>Otimização de desempenho</li>
+            <li>Correção de bugs no sistema de save</li>
+            <li>Novos blocos: Cacto, Fragmento Antigo, Altar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-icon">🪨</span>
+        <h3>OREBORN</h3>
+        <p>Beta 0.9 Pré-Release</p>
+        <p class="footer-note">Executável para Windows • Desenvolvido com Python</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre o Jogo</a>
+        <a href="#features">Recursos</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#download">Download</a>
+        <a href="#contato">Suporte</a>
+      </div>
+      
+      <div class="footer-legal">
+        <h4>Links</h4>
+        <a href="https://github.com/silviamariavasco-create/OreBorn.git" target="_blank">Código Fonte</a>
+        <a href="https://github.com/silviamariavasco-create/OreBorn/releases" target="_blank">Releases</a>
+        <a href="mailto:dev@oreborn.com">Reportar Bug</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 ThousandDegrees • Desenvolvido com ❤️ usando Python, Tkinter e PyInstaller</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
