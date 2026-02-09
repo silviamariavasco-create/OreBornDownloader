@@ -204,26 +204,7 @@ document.querySelectorAll('.section-card').forEach(card => {
   });
 });
 
-// Detecta sistema operacional e ajusta instruções
-function detectOS() {
-  const userAgent = navigator.userAgent;
-  
-  // Se não for Windows, mostra aviso
-  if (!userAgent.includes('Windows')) {
-    const instructions = document.querySelector('.instructions');
-    if (instructions) {
-      const osWarning = document.createElement('div');
-      osWarning.className = 'os-warning';
-      osWarning.innerHTML = `
-        <i class="fas fa-exclamation-circle"></i>
-        <p><strong>Atenção:</strong> Este executável é apenas para Windows. Usuários de Mac/Linux podem precisar executar o código fonte Python.</p>
-      `;
-      instructions.prepend(osWarning);
-    }
-  }
-}
-
-// Adiciona estilos CSS para as animações e avisos
+// Adiciona estilos CSS para as animações
 const style = document.createElement('style');
 style.textContent = `
   .animate-hidden {
@@ -274,30 +255,49 @@ style.textContent = `
     position: relative;
     z-index: 1;
   }
-  
-  .os-warning {
-    background: rgba(212, 175, 55, 0.2);
-    border-left: 4px solid #d4af37;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-  
-  .os-warning i {
-    color: #d4af37;
-    font-size: 20px;
-    margin-top: 2px;
-  }
 `;
 
 document.head.appendChild(style);
 
-// Inicialização
-window.addEventListener('load', () => {
-  createFloatingParticles();
-  detectOS();
-});
+// Detecta sistema operacional para instruções específicas
+function detectOS() {
+  const userAgent = navigator.userAgent;
+  
+  // Se não for Windows, mostra aviso
+  if (!userAgent.includes('Windows')) {
+    const instructions = document.querySelector('.instructions');
+    if (instructions) {
+      const osWarning = document.createElement('div');
+      osWarning.className = 'os-warning';
+      osWarning.innerHTML = `
+        <i class="fas fa-exclamation-circle"></i>
+        <p><strong>Atenção:</strong> Este executável é apenas para Windows. Usuários de Mac/Linux podem precisar executar o código fonte Python.</p>
+      `;
+      instructions.prepend(osWarning);
+      
+      // Adiciona estilo para o aviso
+      const warningStyle = document.createElement('style');
+      warningStyle.textContent = `
+        .os-warning {
+          background: rgba(212, 175, 55, 0.2);
+          border-left: 4px solid #d4af37;
+          padding: 12px;
+          border-radius: 5px;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          margin-bottom: 15px;
+          font-size: 14px;
+        }
+        
+        .os-warning i {
+          color: #d4af37;
+          font-size: 20px;
+        }
+      `;
+      document.head.appendChild(warningStyle);
+    }
+  }
+}
+
+window.addEventListener('load', detectOS);

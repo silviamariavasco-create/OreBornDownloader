@@ -443,11 +443,6 @@ body {
   color: var(--accent-green);
 }
 
-/* Ícone específico para arquivo ZIP */
-.file-icon .fa-file-archive {
-  color: #d4af37;
-}
-
 .download-btn {
   display: flex;
   align-items: center;
@@ -467,23 +462,15 @@ body {
   box-shadow: 0 10px 20px rgba(46, 139, 87, 0.3);
 }
 
-.instructions {
-  margin-top: 20px;
-}
-
-.instructions h4 {
+.instructions code {
+  display: block;
+  background: var(--primary-dark);
   color: var(--accent-green);
-  margin-bottom: 15px;
-}
-
-.install-steps {
-  list-style-type: decimal;
-  padding-left: 20px;
-}
-
-.install-steps li {
-  margin-bottom: 10px;
-  line-height: 1.5;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+  border-left: 3px solid var(--accent-green);
 }
 
 .warning {
@@ -578,12 +565,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.footer-note {
-  font-size: 14px;
-  opacity: 0.8;
-  margin-top: 5px;
 }
 
 .footer-links {
@@ -691,4 +672,108 @@ footer {
   .game-details {
     grid-template-columns: 1fr;
   }
+}
+
+/* Estilos específicos para download */
+.file-icon .fa-github {
+  color: #d4af37;
+}
+
+.install-steps {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.install-steps li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  line-height: 1.4;
+}
+
+.troubleshooting {
+  background: rgba(65, 90, 119, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 3px solid var(--accent-blue);
+}
+
+.troubleshooting h5 {
+  color: var(--accent-green);
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.troubleshooting ul {
+  padding-left: 20px;
+}
+
+.troubleshooting li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.changelog {
+  background: rgba(65, 90, 119, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: 1px solid var(--accent-blue);
+}
+
+.changelog h4 {
+  color: var(--accent-green);
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.changelog ul {
+  padding-left: 20px;
+}
+
+.changelog li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.changelog li::before {
+  content: '✓';
+  color: var(--accent-green);
+  position: absolute;
+  left: -20px;
+}
+
+.footer-note {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer-legal a {
+  color: var(--light-blue);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+.footer-legal a:hover {
+  color: var(--accent-green);
 }
